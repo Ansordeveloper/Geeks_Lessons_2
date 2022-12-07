@@ -52,6 +52,12 @@ class Hero:
         self.health_points = health_points
 
 
+    def __mul__(self):
+        return Hero(self.health_points * 2) 
+
+      
+
+
     def __str__(self):
         return f'{self.name}\n' \
                f'{self.nicname}\n' \
@@ -60,10 +66,15 @@ class Hero:
 
 a = Hero('Tony Stark','stark','iron man',100)
 print(a)
-  
-print(a.name)  
 
-print(a.health_points * 2)
+class Hero:
+
+   def printt(name):
+       print(f'{name} its his name')
+    
+   printt('Tony Stark')   
+   
+
 
 
 def __len__(self):
